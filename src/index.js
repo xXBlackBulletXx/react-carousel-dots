@@ -180,7 +180,8 @@ class ReactCarouselDots extends React.Component {
   getDotStyle = () => {
     let style = {
       height: this.props.size,
-      width: this.props.size,
+      maxWidth: this.props.size,
+      width: 'auto',
       marginRight: this.props.margin,
       marginLeft: this.props.margin,
     };
@@ -236,23 +237,23 @@ class ReactCarouselDots extends React.Component {
       if (this.props.active < (this.props.visible - 2)) {
         style = {
           ...style,
-          width: (this.props.size * (this.props.visible)) + ((this.props.visible) * this.props.margin * 2),
+          maxWidth: (this.props.size * (this.props.visible)) + ((this.props.visible) * this.props.margin * 2),
         };
       } else {
         style = {
           ...style,
-          width: (this.props.size * (this.props.visible + 1)) + ((this.props.visible + 1) * this.props.margin * 2),
+          maxWidth: (this.props.size * (this.props.visible + 1)) + ((this.props.visible + 1) * this.props.margin * 2),
         };
       }
     } else if (this.props.active < (3)) {
       style = {
         ...style,
-        width: (this.props.size * (this.props.visible)) + ((this.props.visible) * this.props.margin * 2),
+        maxWidth: (this.props.size * (this.props.visible)) + ((this.props.visible) * this.props.margin * 2),
       };
     } else {
       style = {
         ...style,
-        width: (this.props.size * (this.props.visible + 1)) + ((this.props.visible + 1) * this.props.margin * 2),
+        maxWidth: (this.props.size * (this.props.visible + 1)) + ((this.props.visible + 1) * this.props.margin * 2),
       };
     }
 

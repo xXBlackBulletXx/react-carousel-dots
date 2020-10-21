@@ -12,9 +12,9 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/fulopdaniel/react-carousel-dots",
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/fulopdaniel/react-carousel-dots.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fulopdaniel/react-carousel-dots.git"
   },
   "main": "build/index.js",
   "peerDependencies": {
