@@ -577,8 +577,7 @@ var ReactCarouselDots = function (_React$Component) {
     _this.getDotStyle = function () {
       var style = {
         height: _this.props.size,
-        maxWidth: _this.props.size,
-        width: 'auto',
+        width: _this.props.size,
         marginRight: _this.props.margin,
         marginLeft: _this.props.margin
       };
@@ -618,7 +617,8 @@ var ReactCarouselDots = function (_React$Component) {
 
     _this.getHolderStyle = function () {
       var style = {
-        height: _this.props.size
+        height: _this.props.size,
+        width: 'auto'
       };
       if (_this.state.direction === 'forwards') {
         if (_this.props.active < _this.props.visible - 2) {

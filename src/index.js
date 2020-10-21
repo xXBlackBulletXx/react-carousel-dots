@@ -180,8 +180,7 @@ class ReactCarouselDots extends React.Component {
   getDotStyle = () => {
     let style = {
       height: this.props.size,
-      maxWidth: this.props.size,
-      width: 'auto',
+      width: this.props.size,
       marginRight: this.props.margin,
       marginLeft: this.props.margin,
     };
@@ -232,6 +231,7 @@ class ReactCarouselDots extends React.Component {
   getHolderStyle = () => {
     let style = {
       height: this.props.size,
+      width: 'auto'
     };
     if (this.state.direction === 'forwards') {
       if (this.props.active < (this.props.visible - 2)) {
